@@ -214,7 +214,7 @@ const COMMUNITY_PROJECTS = [
     icon: "⬡", accent: "#7ec8a0",
     tags: ["Education", "Web App", "Open Source"],
     stat: { label: "Elements", value: "118" },
-    links: { live: "#", github: "#" },
+    links: { live: "https://elementos.wildwoodsway.com/", github: "https://github.com/RiomaxGit/ELEMENTOS.git" },
   },
   {
     id: "loadervault", name: "LoaderVault", tagline: "A universe of loading states",
@@ -222,7 +222,7 @@ const COMMUNITY_PROJECTS = [
     icon: "◎", accent: "#a0b8e8",
     tags: ["Developer Tools", "Component Library", "Multi-framework"],
     stat: { label: "Loaders", value: "200+" },
-    links: { live: "#", github: "#" },
+    links: { live: "https://loadervault.wildwoodsway.com/", github: "https://github.com/RiomaxGit/LoaderVault.git" },
   },
   {
     id: "hushnotes", name: "HushNotes", tagline: "Your thoughts, fully offline",
@@ -230,7 +230,7 @@ const COMMUNITY_PROJECTS = [
     icon: "◈", accent: "#c8a8d8",
     tags: ["Privacy", "Desktop App", "Electron"],
     stat: { label: "Storage", value: "Local" },
-    links: { live: "#", github: "#" },
+    links: { live: "https://riomaxgit.github.io/HushNotes/", github: "https://github.com/RiomaxGit/HushNotes.git" },
   },
   {
     id: "finboard", name: "FinBoard", tagline: "Clear finances, clear mind",
@@ -238,7 +238,7 @@ const COMMUNITY_PROJECTS = [
     icon: "◇", accent: "#e8c880",
     tags: ["Finance", "Dashboard", "Web App"],
     stat: { label: "Charts", value: "12+" },
-    links: { live: "#", github: "#" },
+    links: { live: "https://riomaxgit.github.io/Financial_Dashboard/", github: "https://github.com/RiomaxGit/Financial_Dashboard.git" },
   },
   {
     id: "pantone", name: "Pantone Mixer", tagline: "Colour science for the real world",
@@ -246,7 +246,7 @@ const COMMUNITY_PROJECTS = [
     icon: "□", accent: "#e88080",
     tags: ["Retail Tool", "Colour Science", "Analytics"],
     stat: { label: "Colours", value: "5,000+" },
-    links: { live: "#", github: "#" },
+    links: { live: "https://riomaxgit.github.io/PantoneColorMixer/", github: "https://github.com/RiomaxGit/PantoneColorMixer.git" },
   },
 ];
 
@@ -278,12 +278,8 @@ const SERVICES = [
 ];
 
 const PREMIUM_CLIENTS = [
-  { name: "Home Depot", sector: "Retail", note: "Pantone Mixer · Colour analytics platform", initial: "HD" },
-  { name: "Velocity OTT", sector: "Streaming", note: "QA infrastructure · Release automation", initial: "VO" },
-  { name: "NexCart", sector: "E-Commerce", note: "Checkout QA · Performance testing", initial: "NC" },
-  { name: "PulsePoint POS", sector: "Hospitality", note: "End-to-end POS test coverage", initial: "PP" },
-  { name: "Meridian Edu", sector: "EdTech", note: "Platform QA · Accessibility audit", initial: "ME" },
-  { name: "Ironwood Capital", sector: "Finance", note: "FinBoard · Custom dashboards", initial: "IC" },
+  { name: "HDC", sector: "Retail", note: "Pantone Mixer · Colour analytics platform", initial: "HD" },
+  { name: "Coming soon", sector: "Streaming", note: "QA infrastructure · Release automation", initial: "--" }
 ];
 
 /* ─────────────────────────────────────────────
@@ -1034,7 +1030,7 @@ function ServicesSection() {
           <div style={{ position:"absolute", inset:0, pointerEvents:"none", background:`radial-gradient(ellipse 60% 80% at 50% 50%,${t.sectionGlow} 0%,transparent 70%)`, transition:"background 0.8s ease" }} />
           <p style={{ fontFamily:"'Cormorant Garamond',serif", fontSize:isMobile?"1.4rem":"2rem", fontWeight:300, color:t.textBright, margin:"0 0 8px", lineHeight:1.2, transition:"color 0.8s ease" }}>Have a project in mind?</p>
           <p style={{ fontFamily:"'EB Garamond',serif", fontSize:"0.95rem", color:t.textDim, fontStyle:"italic", margin:"0 0 24px", lineHeight:1.7, transition:"color 0.8s ease" }}>Whether it's a free community build or an enterprise engagement — let's talk.</p>
-          <a href="mailto:hello@wildwoodsway.com"
+          <a href="mailto:akhilantonyjoseph1997@gmail.com"
             style={{ display:"inline-flex", alignItems:"center", gap:8, padding:"13px 28px", borderRadius:14, border:`1px solid ${t.primary}`, background:`${t.primary}12`, color:t.primary, fontFamily:"'Cormorant Garamond',serif", fontSize:"0.82rem", letterSpacing:"0.24em", textTransform:"uppercase", textDecoration:"none", transition:"all 0.3s ease" }}
             onMouseEnter={e => { e.currentTarget.style.background=t.primary; e.currentTarget.style.color=t.pageBg; }}
             onMouseLeave={e => { e.currentTarget.style.background=`${t.primary}12`; e.currentTarget.style.color=t.primary; }}
